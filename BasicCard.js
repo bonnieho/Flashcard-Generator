@@ -14,6 +14,27 @@ module.exports = BasicCard;
     The constructed object should have a back property that contains the text on the back of the card.
 
     */
+
+// Returns if a string has only whitespace
+String.prototype.isEmpty = function() {
+        return (this.length === 0 || !this.trim());
+    };
+
+/* FlasCard (Card) container holds a front and back value as arguments */ 
+function Card(front, back){
+    this.frontVal = front;
+    this.backVal = back;
+
+    this.display = function(side){
+        if( side === 0 ){
+            return this.frontVal;
+        }else{
+            return this.backVal;
+        }
+    };
+}
+
+
 /*
 
 exports.twitterKeys = {

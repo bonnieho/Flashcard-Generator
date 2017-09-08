@@ -1,0 +1,27 @@
+{
+  "name": "flashcard-generator",
+  "version": "1.0.0",
+  "description": "A backend for a classic flashcard application containing both basic and cloze-deleted flashcards",
+  "main": "BasicCard.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bonnieho/Flashcard-Generator.git"
+  },
+  "keywords": [
+    "flashcard",
+    "trivia",
+    "questions"
+  ],
+  "author": "Bonnie L. Hoffman",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bonnieho/Flashcard-Generator/issues"
+  },
+  "homepage": "https://github.com/bonnieho/Flashcard-Generator#readme",
+  "dependencies": {
+    "inquirer": "^3.2.3"
+  }
+}
