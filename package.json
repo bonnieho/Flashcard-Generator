@@ -22,6 +22,7 @@
   },
   "homepage": "https://github.com/bonnieho/Flashcard-Generator#readme",
   "dependencies": {
+    "fs": "0.0.1-security",
     "inquirer": "^3.2.3"
   }
 }

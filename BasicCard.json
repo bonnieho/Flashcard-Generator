@@ -1,0 +1,21 @@
+
+{
+	"questions":[
+		{
+			"question": "What is the capital of Alaska?",
+			"answer": "Juneau"
+		},
+		{
+			"question": "What is the capital of North Dakota?",
+			"answer": "Bismarck"
+		},
+		{
+			"question": "What is the capital of Minnesota?",
+			"answer": "St. Paul"
+		},
+		{
+			"question": "What is the capital of Kansas?",
+			"answer": "Topeka"
+		}
+	]	
+}

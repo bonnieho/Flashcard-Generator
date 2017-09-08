@@ -1,3 +1,8 @@
+// dependency for inquirer npm package
+var inquirer = require("inquirer");
+
+
+
 // testing that this file is loaded
 console.log('ClozeCard is loaded');
 
@@ -53,3 +58,115 @@ Bonuses
     Write your constructors such that users can call them with or without the new keyword.
         Look up scope-safe constructors, and try to implement them. It takes only two additional lines of code.
 */
+
+
+
+var capitalAlabama = new BasicCard(
+	"What is the capital of Alabama?", "Montgomery");
+ 
+
+var capitalAlaska = new BasicCard(
+	"What is the capital of Alaska?", "Juneau");
+
+
+var capitalArizona = new BasicCard(
+	"What is the capital of Arizona?", "Phoenix");
+ 
+
+var capitalArkansas = new BasicCard(
+	"What is the capital of Arkansas?", "Little Rock");
+
+
+var capitalCalifornia = new BasicCard(
+	"What is the capital of California?", "Sacramento");
+
+
+
+var capitalColorado = new BasicCard(
+	"What is the capital of Colorado?", "Denver");
+
+
+
+var capitalConnecticut = new BasicCard(
+	"What is the capital of Connecticut?", "Hartford");
+
+ 
+
+var capitalDelaware = new BasicCard(
+	"What is the capital of Delaware", "Dover");
+
+
+var capitalFlorida = new BasicCard(
+	"What is the capital of Florida?", "Tallahassee");
+
+
+var capitalGeorgia = new BasicCard(
+	"What is the capital of Georgia?", "Atlanta");
+
+
+var capitalHawaii = new BasicCard(
+	"What is the capital of Hawaii?", "Honolulu");
+
+    
+
+var capitalIdaho = new BasicCard(
+	"What is the capital of Idaho?", "Boise");
+
+
+
+var capitalIllinois = new BasicCard(
+	"What is the capital of Illinois?", "Springfield");
+
+
+
+var capitalIndiana = new BasicCard(
+	"What is the capital of Indiana?", "Indianpolis");
+
+
+var capitalIowa = new BasicCard(
+	"What is the capital of Iowa?", "Des Moines");
+
+
+var capitalKansas = new BasicCard(
+	"What is the capital of Kansas?", "Topeka");
+
+
+var capitalKentucky = new BasicCard(
+	"What is the capital of Kentucky?", "Frankfort");
+
+
+var capitalLouisiana = new BasicCard(
+	"What is the capital of Louisiana", "Baton Rouge");
+
+
+var capitalMaine = new BasicCard(
+	"What is the capital of Maine?", "Augusta");
+
+
+var capitalMaryland = new BasicCard(
+	"What is the capital of Maryland?", "Annapolis");
+
+
+var capitalMassachusetts = new BasicCard(
+	"What is the capital of Massachusetts?", "Boston");
+
+
+var capitalMichgan = new BasicCard(
+	"What is the capital of Michigan?", "Lansing");
+
+
+var capitalMinnesota = new BasicCard(
+	"What is the capital of Minnesota?", "St. Paul");
+
+
+var capitalMississippi = new BasicCard(
+	"What is the capital of Mississippi?", "Jackson");
+
+
+var capitalMissouri = new BasicCard(
+	"What is the capital of Missouri?", "Jefferson City");
+
+
+
+
+

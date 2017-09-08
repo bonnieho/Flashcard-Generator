@@ -1,7 +1,18 @@
+// dependency for inquirer npm package
+var inquirer = require("inquirer");
+
+
+// fs is a core Node package for reading and writing files
+var fs = require("fs");
+
+
 // testing that this file is loaded
 console.log('BasicCard is loaded');
 
+
 module.exports = BasicCard;
+
+
 
 
 /*
@@ -20,8 +31,8 @@ String.prototype.isEmpty = function() {
         return (this.length === 0 || !this.trim());
     };
 
-/* FlasCard (Card) container holds a front and back value as arguments */ 
-function Card(front, back){
+/* FlashCard (Card) container holds a front and back value as arguments */ 
+function BasicCard(front, back){
     this.frontVal = front;
     this.backVal = back;
 
@@ -35,19 +46,26 @@ function Card(front, back){
 }
 
 
-/*
 
-exports.twitterKeys = {
-  consumer_key: '1p0YmNhhPjH7V5gInpTyyukF3',
-  consumer_secret: 'JV08mkUkhsJEWmkwWSxj88MYkkJBeSdWLLeXURH8nkyPnQWlg9',
-  access_token_key: '899833991691464704-5fsDEdl8QrVBCe4QO2RdpA0xa47lEXJ',
-  access_token_secret: 'zfjHCXwo0MES5OgmfOGxmPxQvmmBQeHfDJHmkSg2wntLk',
-}
+fs.readFile("BasicCard.json", "utf8", function(error, data) {
+
+    // If the code experiences any errors it will log the error to the console.
+    if (error) {
+      return console.log(error);
+    }
+
+    var questionsData = JSON.parse(data).questions;
+    // We will then print the contents of data
+    console.log(questionsData[3]);
+
+	// forEach is a shortcut for the usual iteration
+	// creating the cards
+	var cards = questionsData.forEach({k, v} => new BasicCard(k, v)); 
+	console.log(cards[0].display(1));
 
 
-exports.spotifyKeys = {
-	id: '4a98a7e0b8314a74a5e7de8af60df353',
-	secret: 'e3d5dc6a2a2a4104b7d5461687e932fa',
-}
+  });
 
-*/
+
+
+
